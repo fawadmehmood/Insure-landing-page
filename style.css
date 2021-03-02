@@ -39,7 +39,6 @@ html{
 body{
     font-size: 1.6rem;
     font-family: 'Karla', sans-serif;
-    overflow-x: hidden;
 }
 
 .flex{
@@ -83,6 +82,9 @@ body{
     letter-spacing: var(--letter-space);
 }
 
+.noscroll{
+    overflow: hidden;
+}
 
 /* === start of header === */
 
