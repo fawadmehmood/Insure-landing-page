@@ -24,10 +24,6 @@ a{
     text-decoration: none;
 }
 
-img{
-    display: block;
-}
-
 ul{
     list-style-type: none;
 }
@@ -95,10 +91,15 @@ body{
     height: 8rem;
     top: 0;
     z-index: 2;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.25);
 }
 
 .logo_wrapper{
     margin-right: auto;
+}
+
+.logo_wrapper img{
+    display: block;
 }
 
 
@@ -211,6 +212,8 @@ body{
     margin-top: 8rem;
     color: white;
     position: relative;
+    padding-left: 4rem;
+    padding-right: 4rem;
     /* overflow-x: hidden; */
 }
 
@@ -220,7 +223,7 @@ body{
 
 
 
-.hero__divider{
+.divider{
     width: 15rem;
     height: 0.1rem;
     background-color: var(--Very-Light-Gray);
@@ -281,7 +284,7 @@ body{
     height: calc(50rem + 10vw);
     max-height: 65rem;
     min-height: calc(50rem - 10vw);
-    margin: 10rem 4rem;
+    margin: 10rem 0rem 10rem 8rem;
 }
 
 .hero__img__wrapper img{
@@ -290,6 +293,43 @@ body{
 }
 
 /* === end of hero === */
+
+
+/* === start of features === */
+.features{
+    padding-top: 35rem;
+    padding-bottom: 10rem;
+}
+.features__divider{
+    background-color: var(--Grayish-Blue);
+}
+.features__content h2{
+    /* font-size: clamp(5rem, 5vw, 6.5rem); */
+    font-size: clamp(4rem, 4.5vw, 6.5rem); 
+    color: var(--Very-Dark-Violet);
+}
+
+.feature__cards{
+    gap: 4rem;
+    margin-top: 6rem;
+    color: var(--Dark-Grayish-Violet);
+}
+
+.feature{
+    flex-basis: 100%;
+}
+
+.feature img{
+    margin-bottom: 3rem;
+}
+
+.feature h3{
+        font-size: 2.7rem;
+        color: var(--Very-Dark-Violet);
+        margin-bottom: 1rem;
+} 
+/* === end of features === */
+
 
 
 
@@ -379,6 +419,12 @@ body{
   /* === end of header === */
 
   /* === start of hero === */
+
+  .hero{
+      padding-right: 0;
+      padding-left: 0;
+  }
+
   .hero__wrapper{
     flex-direction: column;
     height: auto;
@@ -398,6 +444,8 @@ body{
 
 .hero__text{
     position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .hero__text::before{
@@ -410,12 +458,30 @@ body{
 .hero__text::after{
     content: url('images/bg-pattern-intro-right-mobile.svg');
     position: absolute;
-    top: 73%;
+    top: 70%;
     bottom: 0;
     z-index: -1;
 }
 
 /* === end of hero === */
+
+
+/* === start of features === */
+
+.features{
+    padding-top: 15rem;
+
+}
+
+.features__content{
+    align-items: center;
+    text-align: center;
+}
+
+.feature__cards{
+          flex-direction: column;
+}
+/* === end of features === */
 
 
      }
