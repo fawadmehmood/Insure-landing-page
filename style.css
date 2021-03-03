@@ -298,7 +298,7 @@ body{
 /* === start of features === */
 .features{
     padding-top: 35rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 .features__divider{
     background-color: var(--Grayish-Blue);
@@ -332,13 +332,43 @@ body{
 
 
 
+/* === start of cta === */
+
+.cta{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+   .cta__content{
+       background-color: var(--Dark-Violet);
+       color: white;
+       padding: 5rem 7rem;
+       justify-content: space-between;
+       gap: 3rem;
+       background-image: url('images/bg-pattern-how-we-work-desktop.svg');
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: top right;
+   }
+
+   .cta__heading{
+    font-size: clamp(3rem, 4vw, 5.5rem); 
+    max-width: 48rem;
+    line-height: 1.2;
+   }
+/* === end of cta === */
+
+
 
 @media screen and (max-width: 1200px) {
   
 }
 
  @media screen and (max-width: 1024px) {
-
+          .cta__content{
+              padding-left: 4rem;
+              padding-right: 4rem;
+          }
 
    }
    
@@ -482,6 +512,24 @@ body{
           flex-direction: column;
 }
 /* === end of features === */
+
+
+
+
+/* === start of cta === */
+
+    .cta__content{
+        background-image: url('images/bg-pattern-how-we-work-mobile.svg');
+        flex-direction: column;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cta__heading{
+        max-width: 36rem;
+    }
+/* === end of cta === */
 
 
      }
